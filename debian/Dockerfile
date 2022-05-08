@@ -4,12 +4,12 @@ FROM debian:11
 # bullseye
 
 ARG USERNAME="dev" \
-    EXTRA_PACKAGES="" \
+    APT_PACKAGES="" \
     DSHELL="/bin/zsh"
 
 RUN --mount=type=cache,target=/var/cache/ \
     apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends $EXTRA_PACKAGES \
+    && apt-get -y install --no-install-recommends $APT_PACKAGES \
     && update-command-not-found \
     && update-alternatives --set editor /bin/nano \
     && /usr/sbin/update-locale --reset LANGUAGE='en_US.UTF-8' LC_ALL='C' \

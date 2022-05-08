@@ -1,4 +1,8 @@
-# notes
+## rees
+
+goes in .binder directory
+
+https://repo2docker.readthedocs.io/en/latest/specification.html
 
 ## install ohmyzsh
 
