@@ -1,2 +1,1 @@
-# ioci.github.io
-Our interactive environments.
+# a standerd for interactive docker/oci environments
